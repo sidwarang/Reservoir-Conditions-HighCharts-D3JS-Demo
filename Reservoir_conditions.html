@@ -7,11 +7,11 @@
         <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js" type="text/javascript"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="charts.js"></script>
-        <script src="CustomGoogleMapMarker.js"></script>
+        <script src="js/charts.js"></script>
+        <script src="js/customMarker.js"></script>
         <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
-        <script src="liquidFillGauge.js" language="JavaScript"></script>
-        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="js/liquidFillGauge.js" language="JavaScript"></script>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
         <style>
 
         </style>
@@ -90,7 +90,7 @@
 
                     // Add circle overlay and bind to marker
                     circles = new MarkerWithLabel({
-                        icon: 'circle.png',
+                        icon: 'images/circle.png',
                         animation: google.maps.Animation.DROP,
                         position: new google.maps.LatLng(latd, lond),
                         map: map,
@@ -138,11 +138,11 @@
             <div align="left"><span style="color:#F7D674">Gold Bar:</span> <span> Available reservoir capacity</span></div>
             <div align="left"><span style="color:#FF0000">Red Line:</span> <span> Historic level for date</span></div>
             <div align="center">
-                <img src="columns.png" width="194" height="110">
+                <img src="images/columns.png" width="194" height="110">
             </div>
             <div id='resname'>Reservoir Name</div>
             <div align="center" style="padding-left:10px">
-                <img src="gauges.png" width="130" height="42">
+                <img src="images/gauges.png" width="130" height="42">
             </div>
         </div>
     </div>
